@@ -1,0 +1,77 @@
+.dialog-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #777;
+    //Added code starts
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //Added code ends
+}
+
+.dialog {
+    background-color: #fff;
+    max-height: 500px;
+    max-width: 350px;
+
+    //Added code starts
+    display: flex;
+    flex-direction: column;
+    
+    //Added code ends
+    &__header {
+        background-color: #ddd;
+        flex: 1;
+    }
+
+    &__header-title-container {
+
+    }
+
+    &__header-title {
+    }
+
+    &__header-button {
+    }
+
+    &__content {
+
+        display: flex;
+        flex: 4
+
+    }
+
+    &__content-block {
+        flex-shrink: 1;
+        &_left {
+            width: 30%;
+            border-right: 1px solid #ccc;
+        }
+
+        &_right {
+            width: 70%;
+            overflow-y: auto;
+        }
+    }
+
+    &__footer {
+        background-color: #ddd;
+        text-align: center;
+        word-break: break-all;
+        flex: 1;
+
+    }
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+    flex-direction: column;
+
+}
